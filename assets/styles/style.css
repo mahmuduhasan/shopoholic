@@ -1,0 +1,81 @@
+* {
+  font-family: "Dosis", sans-serif;
+  overflow: hidden;
+}
+.visible {
+  display: block;
+}
+.invisible {
+  display: none;
+}
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+}
+header nav img{
+  height: 50px;
+  width: 50px;
+}
+header nav ul {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+header nav ul li {
+  margin-left: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.divider {
+  height: 200px;
+  width: 3px;
+  background: black;
+}
+.main {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form input {
+  margin: 10px 15px;
+  border: none;
+  background: none;
+  border: 1px solid lightgreen;
+  padding: 10px 50px;
+  text-align: center;
+}
+.form button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 5px 20px;
+  outline: none;
+}
+.homeDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#loginForm{
+  padding: 20px 40px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+#register{
+  padding: 20px 40px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}

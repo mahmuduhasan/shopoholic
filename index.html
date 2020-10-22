@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopo-Holic</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="body">
+      <header class="header1 visible" id="loginHeader">
+        <nav>
+          <img src="assets/image/favicon.png" alt="">
+          <a href="#">Shopo-Holic</a>
+          <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Registration</a></li>
+          </ul>
+        </nav>
+      </header>
+      <header class="header2 invisible" id="homeHeader">
+        <nav>
+          <img src="assets/image/favicon.png" alt="">
+          <a href="#">Shopo-Holic</a>
+          <ul>
+            <li><a href="#" id="logout">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main" id="loginRegister">
+        <div class="loginDiv">
+          <div class="form" id="loginForm">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="login-email"
+              placeholder="Enter Your Email"
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="login-password"
+              id="password"
+              placeholder="Enter Your Password"
+            />
+            <div class="btn-login">
+              <button type="submit" id="loginButton">Login</button>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="registrationDiv">
+          <div class="form" id="register">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="register-email"
+              placeholder="Enter Your Email"
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="register-password"
+              placeholder="Enter Your Password"
+            />
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Enter Password Again"
+            />
+            <div class="btn-register">
+              <button type="submit" id="registerButton">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homeDiv">
+        <h1 class="invisible" id="home">Welcome to Shopo-Holic!</h1>
+      </div>
+    </div>
+  </body>
+</html>
