@@ -27,6 +27,9 @@ const clearLoginInput = () => {
 const loginHandler = () => {
   const loginEmail = loginInput[0].value;
   const loginPassword = loginInput[1].value;
+  if(loginEmail.trim() === '' || loginPassword.trim() === ''){
+    alert("Please Enter Email and Password.");
+  }
   let userIndex = 0;
   for (const value of registerUser) {
     if (loginEmail === value.email && loginPassword === value.password) {
@@ -43,6 +46,9 @@ const loginHandler = () => {
       mainSection.classList.replace("main", "invisible");
       homeContent.classList.replace('invisible','visible');
       break;
+    }
+    if(loginEmail != value.email || loginPassword != value.password){
+      alert("Wrong email or passoword.")
     }
     userIndex++;
   }
