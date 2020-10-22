@@ -79,3 +79,15 @@ a {
   border: 2px solid gray;
   border-radius: 20px;
 }
+
+@media only screen and (max-width : 708px){
+  *{
+    overflow: visible;
+  }
+  .divider{
+    display: none;
+  }
+  .form{
+    margin-top: 50px;
+  }
+}
